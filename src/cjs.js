@@ -1,5 +1,5 @@
 import React from 'react'
-import {SearchDollarIcon} from '@patternfly/react-icons/dist/js';
+import SearchDollarIcon from '@patternfly/react-icons/dist/js/icons/search-dollar-icon';
 
 const Nested = () => {
   return (
