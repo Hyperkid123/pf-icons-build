@@ -24,6 +24,12 @@ module.exports = {
       test: /src\/.*\.js$/,
       exclude: /(node_modules|bower_components)/i,
       use: [{ loader: 'babel-loader' }]
+  }, {
+    test: /\.(sa|sc|c)ss$/,
+    use: [ 'style-loader', 'css-loader', 'sass-loader', 'resolve-url-loader' ],
+  }, {
+    test: /\.(png|jpg|gif|svg|woff|ttf|eot)/,
+    loader: 'url-loader',
   }]
 },
 };
