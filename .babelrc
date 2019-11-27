@@ -1,3 +1,35 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"]
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    [
+    "babel-plugin-import",
+    {
+      "libraryName": "@patternfly/react-icons",
+      // Use ""libraryDirectory": ""," if your bundler does not support ES modules
+      "libraryDirectory": "dist/js/icons",
+      "camel2DashComponentName": true
+    },
+    "react-icons"
+    ],
+    [
+      "babel-plugin-import",
+      {
+        "libraryName": "@material-ui/core",
+        // Use ""libraryDirectory": ""," if your bundler does not support ES modules
+        "libraryDirectory": "esm",
+        "camel2DashComponentName": false
+      },
+      "core"
+    ],
+    [
+      "babel-plugin-import",
+      {
+        "libraryName": "@material-ui/icons",
+        // Use ""libraryDirectory": ""," if your bundler does not support ES modules
+        "libraryDirectory": "esm",
+        "camel2DashComponentName": false
+      },
+      "icons"
+    ]
+  ]
 }

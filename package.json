@@ -16,6 +16,7 @@
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.13.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "rollup": "^1.27.3",
@@ -34,12 +35,11 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "@material-ui/core": "^4.7.0",
+    "@material-ui/icons": "^4.5.1",
     "@patternfly/react-core": "^3.120.8",
     "@patternfly/react-icons": "^3.14.22",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
-  },
-  "sideEffects": [
-    "./src/cjs.js"
-  ]
+  }
 }
